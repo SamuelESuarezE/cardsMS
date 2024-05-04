@@ -11,6 +11,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
 }
 
 .containerCards {
@@ -19,20 +20,86 @@ body {
     align-items: center;
 }
 
-.containerCards:hover > :nth-child(1) {
-    transform: rotate(-15deg) translate(-300px) translateY(-20px);
-}
-
 .containerCards:hover > :nth-child(2) {
-    transform: rotate(-8deg) translate(-120px);
-}
-
-.containerCards:hover > :nth-child(3) {
-    transform: rotate(8deg) translateX(120px) ;
+    transform: rotate(-15deg) translate(-300px) translateY(-20px);
+    border-radius: 100px;
 }
 
 .containerCards:hover > :nth-child(4) {
-    transform: rotate(15deg) translateX(300px) translateY(-20px);
+    transform: rotate(-8deg) translate(-120px) translateY(-170px);
+}
+
+.containerCards:hover > :nth-child(6) {
+    transform: rotate(8deg) translateX(30px) translateY(100px);
+}
+
+.containerCards:hover > :nth-child(9) {
+    transform: rotate(-10deg) translateX(250px) translateY(-80px);
+}
+
+.containerCards i {
+    font-size: 100px;
+    color: white;
+    position:absolute;
+    text-shadow:  0px 0px 5px rgba(0, 0, 0, 0.726);
+    -webkit-text-stroke: 2px white;
+    transition: transform 0.5s, color 2s, font-size 0.5s;
+}
+
+.containerCards > :last-child {
+    transform: translateX(50px) translateY(20px) rotateY(0.1deg) rotateZ(5deg);
+}
+
+.containerCards:hover > :nth-child(10) {
+    transform: translateX(220px)  translateY(-370px) rotateY(360deg) rotateZ(15deg);
+    color: rgb(125, 255, 175);
+    font-size: 80px
+}
+
+.containerCards:hover > :nth-child(1) {
+    transform: translateX(270px)
+    translateY(220px)
+    rotate(30deg)
+    rotateY(360deg);
+    color: rgb(255, 70, 70);
+    font-size: 125px;
+}
+
+.containerCards:hover > :nth-child(8) {
+    transform: translateX(-400px)
+    translateY(-240px)
+    rotate(-15deg)
+    rotateY(-360deg);
+    color: rgb(235, 80, 255);
+    font-size: 90px;
+}
+
+.containerCards:hover > :nth-child(3) {
+    transform: translateX(-250px)
+    translateY(200px)
+    rotate(-12deg)
+    rotateY(-360deg);
+    color: rgb(70, 243, 255);
+    font-size: 70px;
+
+}
+
+.containerCards:hover > :nth-child(5) {
+    transform: translateX(-150px)
+    translateY(-400px)
+    rotate(-12deg)
+    rotateY(-360deg);
+    color: rgb(255, 227, 70);
+    font-size: 130px
+}
+
+.containerCards:hover > :nth-child(7) {
+    transform: translateX(-20px)
+    translateY(350px)
+    rotate(15deg)
+    rotateY(-360deg);
+    color: rgb(255, 125, 201);
+    font-size: 130px
 }
 
 
@@ -46,21 +113,32 @@ body {
     transition: 0.5s;
 }
 
-.bigCard:nth-child(1) {
-    transform: rotate(-5deg) translate(-50px);
+.bigCard img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    transition: 0.5s;
+    object-fit: cover;
+    box-shadow: -5px 0px 10px rgba(0, 0, 0, 0.582);
+
 }
 
 .bigCard:nth-child(2) {
+    transform: rotate(-5deg) translate(-50px);
+    
+}
+
+.bigCard:nth-child(4) {
     transform: rotate(-2deg) translate(-20px);
 
 }
 
-.bigCard:nth-child(3) {
+.bigCard:nth-child(6) {
     transform: rotate(2deg) translate(20px);
 
 }
 
-.bigCard:nth-child(4) {
+.bigCard:nth-child(9) {
     transform: rotate(5deg) translate(50px);
 }
 
